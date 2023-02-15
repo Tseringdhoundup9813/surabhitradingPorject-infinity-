@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --lightblack:rgb(14, 14, 14);
+    --lightorange:orange;
+    --box-shadow:5px 3px 4px rgb(74, 74, 74);
+}
+
+
+
+
+.About-container{
+    width:100%;
+    min-height:90vh;
+    /* background-color:rgb(255, 236, 236); */
+   
+}
+/* about-second-parent */
+
+/* end here */
+
+.about-title{
+    width: 100%;
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:20px;
+}
+.about-title > h1{
+    font-size:2.1rem;
+    font-family: 'Anton', sans-serif;
+    color:rgb(80, 80, 80);
+    text-transform: capitalize;
+}
+
+.about-us-description{
+    width:70%;
+    height:100%;
+    padding:20px;
+    /* background-color:rgb(244, 244, 244); */
+    margin:auto;
+   
+
+}
+.about-us-description > p{
+    font-size:1rem;
+    color:rgb(135, 135, 135);
+    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height:25px;
+    margin:10px 0px;
+
+}
+
+
+/* about-listinformation-box */
+.about-listinformation-box{
+    width:70%;
+    height:100%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,250px);
+    grid-gap:1em;
+    margin-top:20px;
+    /* background-color:rgb(0, 0, 0); */
+}
+/* end here */
+
+
+
+/* about-our-objective */
+.about-our-objective{
+    width:100%;
+    position: relative;
+    transition:all 1s ease;
+}
+.about-our-objective:hover{
+    /* box-shadow:2px 2px 2px 3px rgb(219, 219, 219); */
+    /* filter:drop-shadow(--box-shadow); */
+    clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 0 14%);
+
+    
+    
+}
+
+.about-our-objective-text-box{
+    position: absolute;
+    bottom:0%;
+    width:100%;
+    height:50%;
+    background-color:rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 39%, 100% 100%, 0% 100%);
+    transition:all 1s ease;
+
+
+}
+.about-our-objective:hover .about-our-objective-text-box{
+    background-color:rgb(255, 97, 40);
+
+}
+.about-our-objective-text-box > h1{
+    font-size:1rem;
+    color:var(--lightblack);
+    margin-top:25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-our-objective-text-box > p{
+    font-size:0.8rem;
+    width:98%;
+    font-weight: bold;
+    margin-top:6px;
+    color:var(--lightblack);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.about-our-objective-img{
+
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    /* clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 0 59%); */
+    clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 1% 31%);
+    
+}
+.about-our-objective-img > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+
+}
+
+
+
+
+
+/* end here */
+
+/* about-our-goal */
+.about-our-goal{
+    width:100%;
+    height:100%;
+    position: relative;
+ 
+}
+.about-goal-img{
+    width: 100%;
+    height:100%;
+}
+.about-goal-img> img{
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+
+}
+
+.about-our-goal-text-box{
+    width:95%;
+    height:30%;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    bottom:-10%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.about-our-goal-text-box > h1{
+    font-size:1rem;
+    color:var(--lightorange);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-our-goal-text-box > p{
+    font-size:0.8rem;
+    width:95%;
+    margin-top:6px;
+    color:var(--lightblack);
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+/* end here */
+
+
+
+
+
+/* about-vision-statement */
+.about-vision-statement{
+    width:100%;
+    height:100%;
+    position: relative;
+ 
+  
+}
+.about-vision-statemet-text-box{
+    width:95%;
+    height:40%;
+    background-color:white;
+    position: absolute;
+    bottom:-10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-vision-statemet-text-box > h1{
+    font-size:1rem;
+    color:var(--lightorange);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.about-vision-statemet-text-box > p{
+    font-size:0.8rem;
+    width:98%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--lightblack);
+    margin-top:6px;
+
+}
+
+.about-vision-statement-img {
+    width:100%;
+    height:100%;
+}
+.about-vision-statement-img > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(0.5);
+
+}
+
+/* end here */
+
+
+/* mission satemetnt */
+
+.about-mission-statement{
+    width:100%;
+    height:100%;
+    position: relative;
+  
+}
+.about-mission-statement-text-box{
+    width:95%;
+    height:40%;
+    background-color: white;
+    position: absolute;
+    bottom:-10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.about-mission-statement-text-box > h1{
+
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--lightorange);
+}
+.about-mission-statement-text-box > p{
+    font-size:0.8rem;
+    width:97%;
+    color:var(--lightblack);
+
+}
+.about-mission-statement-img{
+    width:100%;
+    height:100%;
+}
+.about-mission-statement-img > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+
+}
+
+
+/* end here */
+
+
+
+/* about-major-product-range */
+.about-major-product-range{
+    width:100%;
+    height:100%;
+    position: relative;
+
+}
+
+.about-major-product-range-img{
+    width:100%;
+    height:100%;
+}
+.about-major-product-range-img> img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+
+}
+
+.about-major-product-range ul {
+
+    width: 95%;
+    background-color:white;
+    position:absolute;
+    bottom:-20%;
+    padding:10px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;    
+}
+.about-major-product-range > ul > h1{
+    font-size:1rem;
+    color:var(--lightorange);
+    margin-top:10px;
+}
+.about-major-product-range > ul> li{
+    width:70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.8rem;
+    color:var(--lightblack);
+    text-align:left;
+    margin-top:0px;
+
+
+}
+/*  */
