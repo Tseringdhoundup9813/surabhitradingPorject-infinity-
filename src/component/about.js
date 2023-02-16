@@ -21,9 +21,9 @@ function About(){
         {/*about description */}
         <div className="about-second-parent">
             <motion.div className="about-us-description"
-            initial={{x:400,y:-60}}
-            whileInView={{x:0}}
-            transition={{delay:0.1,duration:1}}>
+            initial={{scale:0.1}}
+            whileInView={{scale:1}}
+            transition={{duration:1}}>
                 <p>Surabhi Trading Pvt. Ltd. It was established and registered in Nov 2017 
                     with its head office located in Ward No. 3, Nagarjun Municipality, Kathmandu,
                     </p>
