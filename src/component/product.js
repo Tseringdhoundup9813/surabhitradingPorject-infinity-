@@ -1,5 +1,6 @@
 import React from "react";
 import "../cssComponent/product.css";
+import {motion} from "framer-motion";
 
 
 
@@ -58,7 +59,11 @@ function Product(){
         },
         {
             img:"./Image/bettery.jpg",
-            name:"Bettery"
+            name:"doma"
+        },
+        {
+            img:"./Image/bettery.jpg",
+            name:"doma"
         },
         {
             img:"./Image/bettery.jpg",
@@ -98,14 +103,19 @@ function Product(){
             <div className="product-list">
 
                 {product.map((product)=>{
-                return  <div className="product-box">
+                return  <motion.div className="product-box"
+                        initial={{scale:0.5}}
+                        whileInView={{scale:1}}
+                        whileHover={{y:-10}}
+                        transition={{duration:100,type:"spring",stiffness:150}}
+                        viewport={{once:true}}>
                             <div className="product-img">
                                 <img src={product.img}></img>
                             </div>
                             <div className="product-name">
                                 <h1>{product.name}</h1>
                             </div>
-                         </div>
+                         </motion.div>
                 })}
                
                 

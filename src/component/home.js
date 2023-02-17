@@ -1,5 +1,6 @@
 import React from "react";
 import "../cssComponent/home.css";
+import ParticleEffect from "./particleEffect";
 import Navbar from "./navbar";
 import {Link} from "react-scroll";
 import {motion} from "framer-motion";
@@ -11,10 +12,15 @@ function Home(){
 
     return(
     <div 
+    
     className="home-container" id="home">
+        {/* <ParticleEffect></ParticleEffect> */}
+
          <div className="logo">
+            <img src={("./Image/logomem.png")}></img>
          </div>
-    <section id="home-text-container">
+        <section id="home-text-container">
+
         <div class="home-text-box">
 
         <motion.h1

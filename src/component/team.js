@@ -24,9 +24,9 @@ function Team(){
 
         {team.map((item)=>{
         return   <motion.div className="team-box"
-            initial={{scale:0.1}}
-            whileInView={{scale:1}}
-            transition={{duration:0.1}}>
+            initial={{scale:0.1,y:0}}
+            whileHover={{y:-50}}
+            whileInView={{scale:1}}>
             <div className="team-box-img">
                 <img src={("./Image/work1.jpg")}></img>
             </div>

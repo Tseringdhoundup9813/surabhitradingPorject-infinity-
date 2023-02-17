@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+/* font Anton  */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* end here */
+
+:root{
+  --AntonFont:'Anton', sans-serif;
+}
 *{
   margin:0px;
   padding:0px;
   box-sizing: border-box;
   
+}
+body{
+  background-color: rgb(255, 255, 255);
 }
